@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>jEsee | </title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">jEsee</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            电脑Steam改Steam Deck的UI
+        </div>
+        <div class="post-meta">
+            2022-03-13
+        </div>
+    
+
+    <div class="post-md">
+        <h1 id="电脑Steam改Steam-Deck的UI"><a href="#电脑Steam改Steam-Deck的UI" class="headerlink" title="电脑Steam改Steam Deck的UI"></a>电脑Steam改Steam Deck的UI</h1><p>改完这样子</p>
+<p><img src="https://imgheybox.max-c.com/bbs/2022/03/12/9e904be1279bfe8d3f83f2fed4209655/thumb.jpeg"></p>
+<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>〇： 首先退出你的Steam</p>
+<p>一：打开你的 Steam 安装目录，找到 <strong>package</strong> 文件夹使用任何文本编辑器打开 beta 文件（无文件名，没有就新建一个） 将 beta 文件的内容修改为:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">steampal_stable_9a24a2bf68596b860cb6710d9ea307a76c29a04d</span></span><br></pre></td></tr></table></figure>
+<p>二：复制或新建一个 steam.exe 的快捷方式 (也可以在你Steam安装目录中右键Steam.exe,选择”发送到”中的桌面快捷方式），右键 - 属性，在「<strong>目标</strong>」一栏的路径最后打一个空格，输入 <code>-gamepadui</code> ·确定保存，然后双击运行</p>
+<p>三：（<strong>可选，非必须</strong>）开机自动启动 ———— 把修改好的steam。exe 的快捷方式 复制一个到 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</p>
+<h1 id="如何恢复原样？"><a href="#如何恢复原样？" class="headerlink" title="如何恢复原样？"></a>如何恢复原样？</h1><p>很简单，直接在你的Steam安装目录中找到没有被改目标的.exe文件（就是如果不去主动打开被改过目标的.exe它就不会变成Steam Deck 的UI）</p>
+
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 jEsee</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>

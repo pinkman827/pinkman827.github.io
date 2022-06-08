@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>jEsee | </title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">jEsee</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            Clash进阶之TUN/TAP模式
+        </div>
+        <div class="post-meta">
+            2022-03-05
+        </div>
+    
+
+    <div class="post-md">
+        <h1 id="先讲TUN模式"><a href="#先讲TUN模式" class="headerlink" title="先讲TUN模式"></a>先讲TUN模式</h1><p>何为TUN模式?<br>：对于不遵循系统代理的软件，TUN 模式可以接管其流量并交由 CFW 处理。（在 Windows 中，TUN 模式性能比 TAP 模式好）</p>
+<h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>启动 TUN 模式需要进行如下操作：<br>1.点击General中Service Mode右边Manage，在打开窗口中安装服务模式，安装完成应用会自动重启，Service Mode 右边地球图标变为绿色即安装成功 (如果等了很久而就是不变成绿色，那么我们可以退出Clash,后重进Clash,一般就自动变成绿色的啦)</p>
+<p>2.点击General中TUN Mode右边开关启动 TUN 模式</p>
+<h1 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h1><p>参考 Windows 方式一样的。</p>
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>参考 Windows 方式一样的。</p>
+<p>okay 这真的很入门欸~</p>
+<h1 id="那我们在讲讲TAP模式"><a href="#那我们在讲讲TAP模式" class="headerlink" title="那我们在讲讲TAP模式"></a>那我们在讲讲TAP模式</h1><p>对于不遵循系统代理的软件，TAP 模式可以接管其流量并交由 CFW 处理<br>对于 0.13.8 及以后版本，更推荐使用TUN 模式</p>
+<h1 id="首先安装-TAP-网卡"><a href="#首先安装-TAP-网卡" class="headerlink" title="首先安装 TAP 网卡"></a>首先安装 TAP 网卡</h1><p>点击General页面中TAP Device选项的Manage按钮，在弹出对话框中选择Install将会安装 TAP 网卡，此网卡用于接管系统流量，安装完成可在系统网络连接中看到名为cfw-tap的网卡</p>
+<h1 id="启动-TAP-模式"><a href="#启动-TAP-模式" class="headerlink" title="启动 TAP 模式"></a>启动 TAP 模式</h1><p>使用的 Profile 中包含 listen 设置：<br>  dns:<br>    enable: true<br>    enhanced-mode: redir-host # 或 fake-ip<br>    listen: 0.0.0.0:53<br>    nameserver:<br>        - 223.5.5.5</p>
+<h1 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h1><p>此版本可以通过<br>设置 Interface Name (自动识别) 属性避免回环，并且支持了 UDP 及 IP 类请求，请在Settings页面Interface Name选项中选择出站网卡（通常为本机物理网卡)</p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>当enhanced-mode设置为fake-ip时，会出现系统检测到网卡无法联网，微软系 APP 无法登陆使用等问题，可以通过添加fake-ip-filter解决：<br>dns:<br>  enable: true<br>  enhanced-mode: fake-ip<br>  listen: 0.0.0.0:53<br>  nameserver:<br>    - 223.5.5.5<br>  fake-ip-filter:<br>    - “dns.msftncsi.com”<br>    - “<a target="_blank" rel="noopener" href="http://www.msftncsi.com&quot;/">www.msftncsi.com&quot;</a><br>    - “<a target="_blank" rel="noopener" href="http://www.msftconnecttest.com&quot;/">www.msftconnecttest.com&quot;</a></p>
+<h1 id="TIP"><a href="#TIP" class="headerlink" title="TIP"></a>TIP</h1><p>TAP 模式更推荐使用 redir-host 模式</p>
+<h1 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h1><iframe width="889" height="500" src="https://www.youtube.com/embed/Q9dzfPfhF3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 jEsee</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>

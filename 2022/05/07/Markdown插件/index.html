@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>jEsee | </title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">jEsee</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            Markdown 插件之 Markdown Preview Enhanced
+        </div>
+        <div class="post-meta">
+            2022-05-07
+        </div>
+    
+
+    <div class="post-md">
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>本文参考 <a target="_blank" rel="noopener" href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">Markdown Preview Enhanced</a></p>
+<p>Markdown Preview Enhanced 是一款为 Atom 以及 Visual Studio Code 编辑器编写的超级强大的 Markdown 插件。 这款插件意在让你拥有飘逸的 Markdown 写作体验。<br><img src="https://user-images.githubusercontent.com/1908863/28227953-eb6eefa4-68a1-11e7-8769-96ea83facf3b.png" alt="图片"></p>
+<h1 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h1><p>VScode 版本安装教程：<br>通过VScode安装（推荐）</p>
+<ol>
+<li>VScode官网 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>下载并安装VScode。</li>
+<li>打开 vscode 编辑器，在插件页搜索 markdown-preview-enhanced，接着点击 Install 按钮。<br><img src="https://user-images.githubusercontent.com/1908863/28199365-bb03a570-682a-11e7-8f65-d7d2b258d583.png" alt="图片"></li>
+</ol>
+<h1 id="HTML-导出"><a href="#HTML-导出" class="headerlink" title="HTML 导出"></a>HTML 导出</h1><p><strong>使用</strong><br>右键点击预览，然后点击 HTML 标签。<br>接着选择：</p>
+<ul>
+<li>HTML (offline) 选择这个选项如果你要离线使用这个 html 文件。</li>
+<li>HTML (cdn hosted) 选择这个选项如果你要远程或在服务器上使用这个 html 文件。<br><img src="https://user-images.githubusercontent.com/1908863/28200455-d5a12d60-6831-11e7-8572-91d3845ce8cf.png" alt="图片"></li>
+</ul>
+<p><strong>设置</strong><br>默认：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">html:</span></span><br><span class="line">  <span class="attr">embed_local_images:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">embed_svg:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">offline:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">toc:</span> <span class="string">undefined</span></span><br><span class="line"></span><br><span class="line"><span class="attr">print_background:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>如果 embed_local_images 被设置为 true，那么所有的本地图片将会被嵌入为 base64 格式。</p>
+<p>如果 toc 被设置为 false，那么边栏目录将会被隐藏。如果 toc 被设置为 true，那么边栏目录将会被缺省启动并显示。如果 toc 没有被设置，那么缺省边栏目录将会被启动，但是并不显示。</p>
+<p><strong>保存时自动导出</strong><br>添加 front-matter 如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">export_on_save:</span></span><br><span class="line">  <span class="attr">html:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>这样当你保存你的 markdown 文件时，html 文件将会被自动导出。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>Markdown语法可参考<a target="_blank" rel="noopener" href="https://jesee.xyz/2022/03/21/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">我的文章跳转</a><br>或<br><a target="_blank" rel="noopener" href="https://markdown.tw/">https://markdown.tw/</a><br>额外功能可参考<a target="_blank" rel="noopener" href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">Markdown Preview Enhanced</a>官网</p>
+
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 jEsee</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>

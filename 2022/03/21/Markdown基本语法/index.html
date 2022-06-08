@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>jEsee | </title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">jEsee</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            Markdown基本语法
+        </div>
+        <div class="post-meta">
+            2022-03-21
+        </div>
+    
+
+    <div class="post-md">
+        <h1 id="Markdown-应用"><a href="#Markdown-应用" class="headerlink" title="Markdown 应用"></a>Markdown 应用</h1><ul>
+<li>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</li>
+<li>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。</li>
+<li>Markdown 编写的文档可以导出 HTML、Word、图像、PDF、Epub 等多种格式的文档。</li>
+<li>Markdown 编写的文档后缀为 .md 或 .markdown。</li>
+<li>Markdown 能被使用来撰写电子书，如：Gitbook。</li>
+</ul>
+<p>当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge 等。</p>
+<h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><p>Markdown 标题有两种格式。</p>
+<ol>
+<li>使用 &#x3D; 和 - 标记一级和二级标题<br> &#x3D; 和 - 标记语法格式如下：  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">一级标题</span></span><br><span class="line"><span class="string">=======</span></span><br><span class="line"></span><br><span class="line"><span class="string">二级标题</span></span><br><span class="line"><span class="string">-------</span></span><br></pre></td></tr></table></figure></li>
+<li>使用 # 号标记<br>使用 # 号克表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。</li>
+</ol>
+<h1 id="Markdown-段落"><a href="#Markdown-段落" class="headerlink" title="Markdown 段落"></a>Markdown 段落</h1><p>Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个空格以上加上回车。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">Markdown[空格][空格][回车]</span></span><br><span class="line"><span class="string">Markdown</span></span><br></pre></td></tr></table></figure>
+<p>当然也可以在段落后面使用一个空行表示重新开始一个段落</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">Markdown</span></span><br><span class="line">[<span class="string">空行</span>]</span><br><span class="line"><span class="string">Markdown</span></span><br></pre></td></tr></table></figure>
+<p>还可以使用 <br/> 实现强制换行</p>
+<p>显示效果如下所示：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">Markdown</span></span><br><span class="line"><span class="string">Markdown</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p>Markdown 可以使用以下几种字体：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">*斜体文本*</span></span><br><span class="line"><span class="string">_斜体文本_</span></span><br><span class="line"></span><br><span class="line"><span class="string">**粗体文本**</span></span><br><span class="line"><span class="string">__粗体文本__</span></span><br><span class="line"></span><br><span class="line"><span class="string">***斜粗体文本***</span></span><br><span class="line"><span class="string">___斜粗体文本___</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h1><p>可以在一行中使用三个以上的星号 *、减号 -、底线 _ 来建立一个分隔线，行内不能有其他东西，也可以在星号 *、减号 -、底线 _ 中间插入空格。下面每种写法都可以建立分隔线：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">***</span></span><br><span class="line"><span class="string">___</span></span><br><span class="line"><span class="bullet">-</span> <span class="bullet">-</span> <span class="bullet">-</span></span><br><span class="line"><span class="string">*</span> <span class="string">*</span> <span class="string">*</span></span><br><span class="line"><span class="string">_</span> <span class="string">_</span> <span class="string">_</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h1><p>如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">正常文本</span></span><br><span class="line"><span class="string">~~删除文本~~</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong><del>像这样</del></strong></p>
+</blockquote>
+<h1 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h1><p>下划线可以通过 HTML 的 <code>&lt;u&gt;</code> 标签来实现：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;u&gt;下划线文本&lt;/u&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong><u>像这样</u></strong></p>
+</blockquote>
+<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><p>脚注是对文本的补充说明，Markdown 脚注的格式如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">^</span> <span class="string">要脚注的文本</span>]</span><br><span class="line"><span class="string">Markdown[^</span> <span class="string">Markdown]</span>  </span><br><span class="line"></span><br><span class="line">[<span class="string">^</span> <span class="string">Markdown</span> ]<span class="string">：一种轻量级标记语言</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h1><p>Markdown 支持有序列表和无序列表。</p>
+<p>无序列表使用星号 *、加号 +、减号 - 作为列表标记，这些标记后面都要添加一个空格，然后再填写内容：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">*</span> <span class="string">第一项</span></span><br><span class="line"><span class="string">*</span> <span class="string">第二项</span></span><br><span class="line"><span class="string">*</span> <span class="string">第三项</span></span><br><span class="line"></span><br><span class="line"><span class="string">+</span> <span class="string">第一项</span></span><br><span class="line"><span class="string">+</span> <span class="string">第二项</span></span><br><span class="line"><span class="string">+</span> <span class="string">第三项</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="string">第一项</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">第二项</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">第三项</span></span><br></pre></td></tr></table></figure>
+<p>像这样：</p>
+<blockquote>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>有序列表使用数字并加上 . 号来表示，如：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">.</span> <span class="string">第一项</span></span><br><span class="line"><span class="number">2</span><span class="string">.</span> <span class="string">第二项</span></span><br><span class="line"><span class="number">3</span><span class="string">.</span> <span class="string">第三项</span></span><br></pre></td></tr></table></figure>
+<p>像这样：</p>
+<blockquote>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+</blockquote>
+<p>列表嵌套只需要在子列表中的选项前面添加四个空格即可：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">.</span> <span class="string">第一项：</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">第一项嵌套的第一个元素</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">第一项嵌套的第二个元素</span></span><br><span class="line"><span class="number">2</span><span class="string">.</span> <span class="string">第二项：</span></span><br><span class="line">  <span class="number">1</span><span class="string">.</span> <span class="string">第二项嵌套的第一个元素</span></span><br><span class="line">  <span class="number">2</span><span class="string">.</span> <span class="string">第二项嵌套的第二个元素</span></span><br></pre></td></tr></table></figure>
+<p>像这样：</p>
+<blockquote>
+<ol>
+<li>第一项：<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：<ol>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号，然后后面紧跟一个空格符号：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&gt;</span> <span class="string">区块引用</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p>区块引用</p>
+</blockquote>
+<p>另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&gt;</span> <span class="string">最外层</span></span><br><span class="line"><span class="string">&gt;</span> <span class="string">&gt;</span> <span class="string">第一层嵌套</span></span><br><span class="line"><span class="string">&gt;</span> <span class="string">&gt;</span> <span class="string">&gt;</span> <span class="string">第二层嵌套</span></span><br></pre></td></tr></table></figure>
+<p>像这样：</p>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>区块中使用列表<br>区块中使用列表实例如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&gt;</span> <span class="string">区块中使用列表</span></span><br><span class="line"><span class="string">&gt;</span> <span class="number">1</span><span class="string">.</span> <span class="string">第一项</span></span><br><span class="line"><span class="string">&gt;</span> <span class="number">2</span><span class="string">.</span> <span class="string">第二项</span></span><br><span class="line"><span class="string">&gt;</span> <span class="string">+</span> <span class="string">第一项</span></span><br><span class="line"><span class="string">&gt;</span> <span class="string">+</span> <span class="string">第二项</span></span><br><span class="line"><span class="string">&gt;</span> <span class="string">+</span> <span class="string">第三项</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p>区块中使用列表</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>列表中使用区块<br>如果要在列表项目内放进区块，那么就需要在 &gt; 前添加四个空格的缩进。<br>区块中使用列表实例如下:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">*</span> <span class="string">第一项</span></span><br><span class="line">    <span class="string">&gt;</span> <span class="string">列表中使用区块</span></span><br><span class="line"><span class="string">*</span> <span class="string">第二项</span></span><br></pre></td></tr></table></figure>
+<p>像这样：</p>
+<ul>
+<li>第一项<blockquote>
+<p>列表中使用区块</p>
+</blockquote>
+</li>
+<li>第二项</li>
+</ul>
+<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><p>如果是段落上的一个函数或片段的代码可以用反引号 &#96; 或用三个反引号 &#96;&#96;&#96; 把它包起来例如：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`</span> <span class="string">print</span> <span class="string">`</span> <span class="string">函数</span></span><br><span class="line"><span class="string">```</span> <span class="string">print</span> <span class="string">```</span> <span class="string">函数</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p><code>print</code> 函数</p>
+</blockquote>
+<figure class="highlight plaintext"><figcaption><span>``` 函数</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">代码区块</span><br><span class="line">代码区块使用 4 个空格或者一个制表符（Tab 键）：</span><br><span class="line">```yml</span><br><span class="line">[空格][空格][空格][空格]print(&quot;Hello&quot;);</span><br><span class="line">[Tab]print(&quot;World&quot;);</span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p>print(“Hello”);<br>print(“World”);</p>
+</blockquote>
+<p>你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定）：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">```</span>][<span class="string">javascript</span>]</span><br><span class="line"><span class="string">$(document).ready(function</span> <span class="string">()</span> &#123;</span><br><span class="line">    <span class="string">alert(&#x27;Hello</span> <span class="string">World&#x27;);</span></span><br><span class="line">&#125;<span class="string">);</span></span><br><span class="line">[<span class="string">```</span>]</span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&#x27;Hello World&#x27;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><p>链接语法格式如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接名称</span>]<span class="string">(链接地址)</span></span><br><span class="line"><span class="string">或者</span></span><br><span class="line"><span class="string">&lt;链接地址&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>显示效果如下所示：<br><a target="_blank" rel="noopener" href="https://www.google.com/">google</a><br>或者<br><a target="_blank" rel="noopener" href="https://www.google.com/">https://www.google.com</a></p>
+</blockquote>
+<h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">![alt</span> <span class="string">属性文本](图片地址)</span></span><br><span class="line"><span class="type">![alt</span> <span class="string">属性文本](图片地址</span> <span class="string">&quot;可选标题&quot;</span><span class="string">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>开头一个感叹号 !</li>
+<li>接着一个方括号，里面放上图片的替代文字</li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 title 属性的文字。</li>
+</ul>
+<p>使用实例：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">![</span><span class="string">图标](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png)</span></span><br><span class="line"><span class="type">![</span><span class="string">图标](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png</span> <span class="string">&quot;Google&quot;</span><span class="string">)</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="图标"><br><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="图标" title="Google"></p>
+</blockquote>
+<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。<br>语法格式如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">|</span> <span class="string">表头</span> <span class="string">|</span> <span class="string">表头</span> <span class="string">|</span></span><br><span class="line"><span class="string">|</span> <span class="string">----</span> <span class="string">|</span> <span class="string">----</span> <span class="string">|</span></span><br><span class="line"><span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span></span><br><span class="line"><span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p>对齐方式<br>我们可以设置表格的对齐方式：</p>
+<ul>
+<li>-:  设置内容和标题栏居右对齐。</li>
+<li>:-  设置内容和标题栏居左对齐。</li>
+<li>:-:  设置内容和标题栏居中对齐。</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">|</span> <span class="string">左对齐</span> <span class="string">|</span> <span class="string">居中对齐</span> <span class="string">|</span> <span class="string">右对齐</span> <span class="string">|</span></span><br><span class="line"><span class="string">|</span> <span class="string">:-----|</span> <span class="string">:----:</span> <span class="string">|</span> <span class="string">----:</span> <span class="string">|</span></span><br><span class="line"><span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span></span><br><span class="line"><span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span> <span class="string">单元格</span> <span class="string">|</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="center">居中对齐</th>
+<th align="right">右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+</tbody></table>
+</blockquote>
+<h1 id="Markdown-高级技巧"><a href="#Markdown-高级技巧" class="headerlink" title="Markdown 高级技巧"></a>Markdown 高级技巧</h1><h2 id="支持的-HTML-元素"><a href="#支持的-HTML-元素" class="headerlink" title="支持的 HTML 元素"></a>支持的 HTML 元素</h2><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。<br>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code> 等,如：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">普通文本：使用</span> <span class="string">Ctrl+Alt+Del</span> <span class="string">重启电脑</span></span><br><span class="line"><span class="string">HTML</span> <span class="string">文本：使用</span> <span class="string">&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt;</span> <span class="string">重启电脑</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p>普通文本：使用 Ctrl+Alt+Del 重启电脑<br>HTML 文本：使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+</blockquote>
+<h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">**文本加粗**</span> </span><br><span class="line"><span class="string">\*\*</span> <span class="string">正常显示星号</span> <span class="string">\*\*</span></span><br></pre></td></tr></table></figure>
+<p>显示效果如下所示：</p>
+<blockquote>
+<p><strong>文本加粗</strong><br>** 正常显示星号 **<br>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\</span>   <span class="string">反斜线</span></span><br><span class="line"><span class="string">`</span>   <span class="string">反引号</span></span><br><span class="line"><span class="string">*</span>   <span class="string">星号</span></span><br><span class="line"><span class="string">_</span>   <span class="string">下划线</span></span><br><span class="line">&#123;&#125;  <span class="string">花括号</span></span><br><span class="line">[]  <span class="string">方括号</span></span><br><span class="line"><span class="string">()</span>  <span class="string">小括号</span></span><br><span class="line"><span class="comment">#   井字号</span></span><br><span class="line"><span class="string">+</span>   <span class="string">加号</span></span><br><span class="line"><span class="bullet">-</span>   <span class="string">减号</span></span><br><span class="line"><span class="string">.</span>   <span class="string">英文句点</span></span><br><span class="line"><span class="string">!</span>   <span class="string">感叹号</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 jEsee</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>

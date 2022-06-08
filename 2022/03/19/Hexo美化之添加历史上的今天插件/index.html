@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>jEsee | </title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">jEsee</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            Hexo美化之添加历史上的今天插件
+        </div>
+        <div class="post-meta">
+            2022-03-19
+        </div>
+    
+
+    <div class="post-md">
+        <h1 id="历史上的今天插件"><a href="#历史上的今天插件" class="headerlink" title="历史上的今天插件"></a>历史上的今天插件</h1><p>参考这篇文章：<a target="_blank" rel="noopener" href="https://zfe.space/post/hexo-history-calendar.html">https://zfe.space/post/hexo-history-calendar.html</a></p>
+<h1 id="NPM-插件安装的部署方法："><a href="#NPM-插件安装的部署方法：" class="headerlink" title="NPM 插件安装的部署方法："></a>NPM 插件安装的部署方法：</h1>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">i</span> <span class="string">hexo-history-calendar</span> <span class="string">--save</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line"></span><br><span class="line"><span class="string">cnpm</span> <span class="string">i</span> <span class="string">hexo-history-calendar</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+<p>  注意，一定要加 –save，不然本地预览的时候可能不会显示！！！</p>
+<h1 id="新增网站根目录-config-配置项-不是主题的-："><a href="#新增网站根目录-config-配置项-不是主题的-：" class="headerlink" title="新增网站根目录_config 配置项 (不是主题的)："></a>新增网站根目录_config 配置项 (不是主题的)：</h1>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">history_calendar:</span></span><br><span class="line">  <span class="attr">priority:</span> <span class="number">4</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">enable_page:</span> <span class="string">all</span></span><br><span class="line">  <span class="attr">layout:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">class</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">sticky_layout</span></span><br><span class="line">    <span class="attr">index:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">temple_html:</span> <span class="string">&#x27;&lt;div class=&quot;card-widget card-history&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div class=&quot;item-headline&quot;&gt;&lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;&lt;span&gt;那年今日&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt;&lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;&lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h1 id="enable"><a href="#enable" class="headerlink" title="enable"></a>enable</h1><p>  参数：true&#x2F;false<br>  含义：是否开启插件</p>
+<h1 id="enable-page"><a href="#enable-page" class="headerlink" title="enable_page"></a>enable_page</h1><p>  参数：all<br>  含义：路由地址，all 代表全局开启。如 &#x2F; 代表主页。</p>
+<h1 id="priority"><a href="#priority" class="headerlink" title="priority"></a>priority</h1><p>  参数：1<br>  含义：插件的叠放顺序，数字越大，叠放约靠前。<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">history_calendar:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">4</span> <span class="comment"># 这里是参数</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h1><p>  参数：type; （class&amp;id）<br>  参数：name;<br>  参数：index；（数字）<br>  含义：如果说 history_calendar 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>  而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>  其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>  最后墙的名字即是 name;<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;div</span> <span class="string">desc=&quot;我是墙&quot;</span> <span class="string">id=&quot;recent-posts&quot;&gt;</span></span><br><span class="line">  <span class="string">&lt;!--</span> <span class="string">id=&gt;type</span>  <span class="string">recent-posts=&gt;name</span>    <span class="string">--&gt;</span></span><br><span class="line">  <span class="string">&lt;div</span> <span class="string">desc=&quot;我是画框&quot;&gt;</span></span><br><span class="line">    <span class="string">&lt;div</span> <span class="string">desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line">      <span class="string">&lt;!--这里通过js挂载history_calendar，也就是画画--&gt;</span></span><br><span class="line">    <span class="string">&lt;/div&gt;</span></span><br><span class="line">  <span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="temple-html"><a href="#temple-html" class="headerlink" title="temple_html"></a>temple_html</h1><p>  参数：html 模板字段<br>  含义：包含挂载容器<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;div</span> <span class="string">class=&quot;card-widget</span> <span class="string">card-history&quot;&gt;</span> <span class="string">&lt;!--</span> <span class="string">挂载容器</span> <span class="string">--&gt;</span></span><br><span class="line">  <span class="string">&lt;div</span> <span class="string">class=&quot;card-content&quot;&gt;</span></span><br><span class="line">    <span class="string">&lt;div</span> <span class="string">class=&quot;item-headline&quot;&gt;</span></span><br><span class="line">      <span class="string">&lt;i</span> <span class="string">class=&quot;fas</span> <span class="string">fa-clock</span> <span class="string">fa-spin&quot;&gt;&lt;/i&gt;</span></span><br><span class="line">      <span class="string">&lt;span&gt;那年今日&lt;/span&gt;</span></span><br><span class="line">    <span class="string">&lt;/div&gt;</span></span><br><span class="line">  <span class="string">&lt;div</span> <span class="string">id=&quot;history-baidu&quot;</span> <span class="string">style=&quot;height:</span> <span class="string">100px;overflow:</span> <span class="string">hidden&quot;&gt;</span> <span class="string">&lt;!--</span> <span class="string">挂载器</span> <span class="string">--&gt;</span></span><br><span class="line">    <span class="string">&lt;div</span> <span class="string">class=&quot;history_swiper-container&quot;</span> <span class="string">id=&quot;history-container&quot;</span> <span class="string">style=&quot;width:</span> <span class="number">100</span><span class="string">%;height:</span> <span class="number">100</span><span class="string">%&quot;&gt;</span></span><br><span class="line">          <span class="string">&lt;div</span> <span class="string">class=&quot;swiper-wrapper&quot;</span> <span class="string">id=&quot;history_container_wrapper&quot;</span> <span class="string">style=&quot;height:20px&quot;&gt;&lt;/div&gt;</span></span><br><span class="line">    <span class="string">&lt;/div&gt;</span></span><br><span class="line">  <span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="hexo-三连"><a href="#hexo-三连" class="headerlink" title="hexo 三连"></a>hexo 三连</h1><p>  执行 hexo 三连<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span></span><br><span class="line"></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span> <span class="string">-d</span></span><br></pre></td></tr></table></figure><br>  即可发现已经成功部署。</p>
+
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 jEsee</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>
