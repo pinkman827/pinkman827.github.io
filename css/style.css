@@ -162,7 +162,7 @@ a
 }
 .post-title:hover
 {
-    color: var(--font-color-0);
+    color: #b779e9;
     transition: color ease-in-out .5s;
 }
 .post-except
